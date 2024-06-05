@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TraderKindDef>
+    <defName>Orbital_MechtechSupplier</defName>
+    <label>mechtech supplier</label>
+    <orbital>true</orbital>
+    <stockGenerators>
+      
+      <!-- Resources -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>4000~6000</countRange>
+      </li>
+	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentIndustrial</thingDef>
+        <countRange>10~15</countRange>
+      </li>
+	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentSpacer</thingDef>
+        <countRange>1~6</countRange>
+      </li>
+	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Steel</thingDef>
+        <countRange>250~600</countRange>
+      </li>
+	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Plasteel</thingDef>
+        <countRange>100~400</countRange>
+      </li>
+	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Gold</thingDef>
+        <countRange>50~200</countRange>
+      </li>
+	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Uranium</thingDef>
+        <countRange>50~150</countRange>
+      </li>
+	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Chemfuel</thingDef>
+        <countRange>100~250</countRange>
+      </li>
+	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>SubcoreBasic</thingDef>
+        <countRange>3~4</countRange>
+      </li>
+	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>SubcoreRegular</thingDef>
+        <countRange>0~3</countRange>
+      </li>
+	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>SubcoreHigh</thingDef>
+        <countRange>-2~2</countRange>
+      </li>
+	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Mechlink</thingDef>
+        <countRange>-5~1</countRange>
+      </li>
+	  
+	  <li MayRequire="OskarPotocki.VFE.Mechanoid" Class="StockGenerator_SingleDef">
+        <thingDef>VFE_ComponentMechanoid</thingDef>
+        <countRange>0~4</countRange>
+      </li>
+	  
+	  <li MayRequire="vanillaracesexpanded.android" Class="StockGenerator_SingleDef">
+        <thingDef>VREA_PersonaSubcore</thingDef>
+        <countRange>-2~2</countRange>
+      </li>
+
+
+      <!-- Buying -->
+	  <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Drugs</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>Bionic</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>TechHediff</tag></li>
+      <li Class="StockGenerator_BuySingleDef"><thingDef>SubcoreBasic</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef"><thingDef>SubcoreRegular</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef"><thingDef>SubcoreHigh</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef"><thingDef>Chemfuel</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="vanillaracesexpanded.android"><thingDef>VREA_PersonaSubcore</thingDef></li>
+	  
+    </stockGenerators>
+  </TraderKindDef>
+  
+  </Defs>

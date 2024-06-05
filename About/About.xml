@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Mechtech Trader</name>
+  <author>CyrusJazzberry</author>
+  <supportedVersions>
+    <li>1.5</li>
+  </supportedVersions>
+  <packageId>Jazzberry.MechtechTrader</packageId>
+  <description>Adds a new orbital trader that deals in mechanoid goods.
+  </description>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Biotech</li>
+    <li>vanillaracesexpanded.android</li>
+  </loadAfter>
+</ModMetaData>
